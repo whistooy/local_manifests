@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="whistooy" fetch="https://github.com/whistooy" revision="fourteen" />
+  <remote  name="inkypen-gitlab" fetch="https://gitlab.com/inkypen" revision="clang-r498229b" />
+
++  <!-- AOSP Clang 17.0.4 -->
++  <project name="prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86/clang-r498229b" remote="inkypen-gitlab" />
+
+  <!-- Device Specific -->
+  <project name="android_kernel_xiaomi_msm8996" path="kernel/xiaomi/msm8996" remote="whistooy" />
+  <project name="android_device_xiaomi_scorpio" path="device/xiaomi/scorpio" remote="whistooy" />
+  <project name="android_device_xiaomi_msm8996-common" path="device/xiaomi/msm8996-common" remote="whistooy" />
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-21" />
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="whistooy" />
+</manifest>
